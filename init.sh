@@ -13,5 +13,3 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 # pluginにz, zsh-autosuggestionsを追加
 sed -i 's/plugins=(git)/plugins=(git z zsh-autosuggestions)/' ~/.zshrc
-
-source ~/.zshrc
