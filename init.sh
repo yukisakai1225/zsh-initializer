@@ -1,5 +1,3 @@
-echo $SHELL
-
 # Install oh-my-zsh
 echo "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" > ~/.oh.sh
 sed -i 's/exec zsh -l//g' ~/.oh.sh
@@ -15,3 +13,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 # pluginにz, zsh-autosuggestionsを追加
 sed -i 's/plugins=(git)/plugins=(git z zsh-autosuggestions)/' ~/.zshrc
+
+source ~/.zshrc
